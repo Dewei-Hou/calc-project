@@ -1,4 +1,4 @@
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 def add(a, b):
     return a + b
@@ -10,6 +10,8 @@ def multiply(a, b):
     return a * b
 
 def divide(a, b):
+    if b == 0:
+        return None
     return a / b
 
 if __name__ == "__main__":
